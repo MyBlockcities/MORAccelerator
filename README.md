@@ -13,7 +13,7 @@ The Morpheus Accelerator aims to support in-person and virtual hackathons with M
 The Morpheus Accelerator will improve discoverability and accessibility of developer tools that accelerate builders. 
 
 ## Use Case Curation
-The Morpheus Accelerator will curate impactful use cases within the community to inspire builders.
+The Morpheus Accelerator will curate impactful use cases within the community to inspire builders. You can review and contribute to the [Morpheus Smart Agent Use Cases](https://docs.google.com/spreadsheets/d/18-6Hxe59Rc6vXTEkyFUgeRZsI0PjdJYk715bx6eSD14/edit?gid=0#gid=0) being curated by the community.
 
 ## MOR20 Fair Launch
 The Morpheus Accelerator will enable the MOR20 Fair Launch standard and serve as a resource for projects seeking to understand how MOR20 Fair Launch can be used for project incubation. 
