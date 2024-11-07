@@ -4,7 +4,7 @@
 ## A grassroots project to accelerate the Morpheus builder community.
 
 ## Introduction 
-The Morpheus Accelerator is a grassroots project with the mission to empower the Morpheus builder community. It focuses on meeting builders where they are and enabling them to use developer tools, access compute resources, and identify ways to contribute to the ecosystem.
+The Morpheus Accelerator is a grassroots project with the mission to empower the Morpheus builder community. It focuses on meeting builders where they are and enabling them to use developer tools, access compute resources, and identify ways to contribute to the ecosystem. Visit the [Morpheus Accelerator website](https://kcdenman.github.io/accmor/) to learn more about the accelerator or submit more project.
 
 ## Hackathons
 The Morpheus Accelerator aims to support in-person and virtual hackathons with Morpheus developer tools, code, compute, and capital. If you are considering hosting a hackathon, refer to this [Morpheus Hackathon Guide](https://kevindenman.notion.site/Morpheus-Hackathon-Guide-12d87e2c683c80aaa890ff8e9f08f6d0) to view builder tracks, developer tools, and other guidance to support your hackathon.
