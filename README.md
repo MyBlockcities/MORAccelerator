@@ -130,18 +130,42 @@ Visit http://localhost:3000 to view the application.
 
 ### BIP39 Wordlist ESM Import Issue
 
-This project uses the `ox` package which imports wordlists from `@scure/bip39` without the `.js` extension, causing ESM import errors. The error looks like:
+This project uses the `ox` package which imports wordlists from `@scure/bip39` without the `.js` extension, causing ESM import errors. The error typically looks like:
 
 ```
-Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/path/to/node_modules/@scure/bip39/wordlists/czech' imported from /path/to/node_modules/ox/_esm/core/internal/mnemonic/wordlists.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/path/to/node_modules/@scure/bip39/wordlists/czech' 
+imported from /path/to/node_modules/ox/_esm/core/internal/mnemonic/wordlists.js
 Did you mean to import "@scure/bip39/wordlists/czech.js"?
 ```
 
-We've added a postinstall script that automatically creates the missing files. If you encounter this issue:
+#### Automatic Fix
+We've added a postinstall script that automatically creates the missing files when you install dependencies:
 
-1. The script should run automatically after `npm install` or `yarn install`
-2. If the error persists, run `node scripts/fix-bip39-wordlists.js` manually
-3. Restart your development server
+```bash
+# The fix runs automatically during:
+npm install
+# or
+yarn install
+```
+
+#### Manual Fix (if needed)
+If you still encounter this issue after installation:
+
+1. Run the provided fix script:
+   ```bash
+   # Using the shell script (recommended)
+   ./scripts/fix-bip39-imports.sh
+   
+   # Or directly with Node
+   node scripts/fix-bip39-wordlists.js
+   ```
+
+2. If errors persist, try these steps:
+   - Clear your Node.js module cache: `rm -rf node_modules/.cache`
+   - Restart your development server
+   - In rare cases, you may need to reinstall dependencies: `rm -rf node_modules && yarn install`
+
+The fix creates proxy files for each wordlist without the `.js` extension that properly export from the original files, addressing the ESM import issue while maintaining compatibility.
 
 ## Available Scripts
 
