@@ -7,6 +7,8 @@ function HeroSection() {
   useEffect(() => {
     AOS.init()
     AOS.refresh()
+    // AOS is an external library that doesn't depend on props or state
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const [formData, setFormData] = useState({

@@ -5,11 +5,15 @@ import "react-toastify/dist/ReactToastify.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ClientOnly from "../common/ClientOnly";
+import Image from "next/image";
 
 function CreateBlog() {
+  // Initialize AOS animation library on component mount
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    // AOS is an external library that doesn't depend on props or state
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   interface BlogData {
@@ -141,7 +145,7 @@ function CreateBlog() {
                   
                   {previewUrl ? (
                     <div className="relative w-full h-48">
-                      <img src={previewUrl} alt="Preview" className="w-full h-full object-cover" />
+                      <Image src={previewUrl} alt="Preview" width={400} height={200} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                         <p className="text-white">Click to change</p>
                       </div>

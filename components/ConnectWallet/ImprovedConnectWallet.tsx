@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAccount, useDisconnect } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import Image from 'next/image';
 
 /**
  * ImprovedConnectWallet component provides a cleaner UI for wallet connections
@@ -72,9 +73,11 @@ const ImprovedConnectWallet: React.FC = () => {
                     {chain.hasIcon && (
                       <div className="network-icon w-4 h-4 mr-1">
                         {chain.iconUrl && (
-                          <img
+                          <Image
                             alt={chain.name ?? 'Chain icon'}
                             src={chain.iconUrl}
+                            width={16}
+                            height={16}
                             className="w-full h-full rounded-full"
                           />
                         )}

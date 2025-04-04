@@ -91,6 +91,9 @@ const RewardVisualizationDashboard: React.FC<RewardVisualizationDashboardProps> 
     
     // Trigger animation after component mounts
     setIsVisible(true);
+    
+    // No dependencies needed since these functions don't change and don't depend on props/state
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleTabChange = (_event: React.SyntheticEvent, newValue: number) => {

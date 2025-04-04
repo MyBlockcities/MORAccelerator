@@ -42,7 +42,7 @@ const AnimatedStakingFlow: React.FC<AnimatedStakingFlowProps> = ({ onStake, maxA
       const additionalFactor = (cappedAdditionalMonths * 0.5) / 24;
       setPowerFactor(Math.min(2.5 + additionalFactor, 3.0));
     }
-  }, [duration]);
+  }, [duration, STAKING_PERIODS.ONE_MONTH, STAKING_PERIODS.THREE_MONTHS, STAKING_PERIODS.SIX_MONTHS, STAKING_PERIODS.ONE_YEAR]);
 
   const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAmount(e.target.value);

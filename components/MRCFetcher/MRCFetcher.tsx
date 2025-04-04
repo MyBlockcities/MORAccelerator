@@ -69,6 +69,9 @@ const MRCFetcher: React.FC = () => {
 
   useEffect(() => {
     fetchMRCs();
+    // Including fetchMRCs in the dependency array would cause an infinite loop
+    // since it's defined inside the component and would be recreated on each render
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const filteredMRCs = selectedCategory === 'Most Recent'
