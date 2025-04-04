@@ -1,12 +1,22 @@
-# Morpheus Builder Integration
+![Wide but short logo for Morpheus](https://github.com/MorpheusAIs/Morpheus/assets/1563345/be0c5a0f-0766-4e31-8e4a-ab18cd211961)
 
-A decentralized platform for managing Morpheus Builder pools, staking, and rewards across multiple blockchain networks (Arbitrum One and Base).
+# Morpheus Builder Accelerator
 
-## Overview
+A decentralized platform for managing Morpheus Builder pools, staking, and rewards across multiple blockchain networks, plus resources for the Morpheus builder community.
 
-The Morpheus Builder platform enables users to create and manage builder pools, stake MOR tokens, and participate in feature sponsorship markets across multiple networks. The platform leverages LayerZero for cross-chain functionality, allowing seamless operations between Ethereum, Arbitrum, and Base networks.
+## Accelerator Overview
 
-## Key Features
+The Morpheus Accelerator is a grassroots project with the mission to empower the Morpheus builder community. It focuses on meeting builders where they are and enabling them to use developer tools, access compute resources, and identify ways to contribute to the ecosystem. Visit the [Morpheus Accelerator website](https://kcdenman.github.io/accmor/) to learn more about the accelerator or submit more project.
+
+### Accelerator Initiatives
+
+- **Hackathons**: Support for in-person and virtual hackathons with Morpheus developer tools, code, compute, and capital. [Morpheus Hackathon Guide](https://kevindenman.notion.site/Morpheus-Hackathon-Guide-12d87e2c683c80aaa890ff8e9f08f6d0)
+- **Builder Tooling**: Improved discoverability and accessibility of developer tools
+- **Use Case Curation**: Curating impactful use cases - [Morpheus Smart Agent Use Cases](https://docs.google.com/spreadsheets/d/18-6Hxe59Rc6vXTEkyFUgeRZsI0PjdJYk715bx6eSD14/edit?gid=0#gid=0)
+- **MOR20 Fair Launch**: Resources for understanding MOR20 Fair Launch for project incubation
+- **Project Incubation**: Using the techno-capital machine and network effects of the Morpheus community
+
+## Builder Platform Features
 
 ### Builder Pool Management
 - Create and manage builder pools with customizable parameters
@@ -37,8 +47,8 @@ The Morpheus Builder platform enables users to create and manage builder pools, 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/MyBlockcities/MOR_Accelerator_New
-cd MOR_Accelerator_New
+git clone https://github.com/MyBlockcities/MORAccelerator
+cd MORAccelerator
 ```
 
 2. Install dependencies using Yarn:
